@@ -8,68 +8,55 @@
 
 ```javascript
 /*
- * Author: Halfirzzha
+ * Author: M'Halfirzzhatullah (halfirzzha)
  */
 
 class DeveloperProfile {
     constructor() {
-        this.name = "Halfirzzha";
-        this.pronouns = "he/him";
+        this.name = "M'Halfirzzhatullah";
         this.role = "Full Stack Developer";
-        this.about = `
-            As a passionate and results-driven Full Stack Developer from Indonesia, I specialize in creating robust, scalable, and
-            user-centric applications. I am deeply committed to continuous learning and keeping up with the ever-evolving 
-            technologies to deliver high-quality solutions. My expertise spans from backend development to front-end design 
-            and everything in between. 
-        `;
-        this.codingLanguages = ["JavaScript", "TypeScript", "Python", "PHP", "Java",];
-        this.technologies = {
-            frontEnd: {
-                frameworks: ["React", "Vue"],
-                styling: ["Tailwind CSS", "Bootstrap", "Sass"]
-            },
-            backEnd: {
-                javascript: ["Node.js", "Express"],
-                php: ["Laravel"],
-                python: ["Django"]
-            },
-            databases: ["MySQL"],
-            mobileDevelopment: ["Kotlin", "Flutter", "Java"]
-        };
-       this.currentFocus = `
-            I am currently focused on building scalable, secure, and high-performance web applications using modern
-            technology stacks. My passion for cloud-native applications, microservices, and automation drives me to 
-            push boundaries and adopt the latest industry best practices.
-        `;
-        this.funFact = "I turn caffeine into code, optimize queries in my sleep, and I’m a big fan of clean code and automation!";
-    }   
+        this.location = "Bogor, Indonesia 🇮🇩";
+        this.stack = ["Laravel", "FilamentPHP", "HTML", "CSS", "JavaScript", "Vue", "Bootstrap"];
+        this.uiuxTools = ["Figma", "Balsamiq"];
+        this.skills = ["Web Dev", "UI/UX Design", "Server Management", "VPS & Hosting"];
+        this.certifications = [
+            "Laravel Fullstack Developer - BuildWith Angga",
+            "Cisco Networking Basics",
+            "Web Security for Penetration Tester"
+        ];
+        this.funFact = "Turns coffee into code ☕, configures VPS in sleep 😴, and lives for clean code ✨";
     }
 
-    displayProfile() {
-        console.log(`👋 Hi, I'm ${this.name} - A passionate ${this.role}!`);
-        console.log(`🌱 Currently learning: Laravel, Vue.js, Django`);
-        console.log(`💬 Ask me about: PHP, Laravel, Vue.js, MySQL`);
-        console.log(`⚡ Fun Fact: ${this.funFact}`);
+    currentFocus() {
+        return "Building secure, scalable & user-centric apps with Laravel + Filament. Exploring more in cybersecurity & distributed systems.";
+    }
+
+    contactMe() {
+        return {
+            email: "halfirzzha@gmail.com",
+            github: "https://github.com/halfirzzha",
+            instagram: "https://instagram.com/halfirzzha"
+        };
     }
 }
 
-const halfirzzha = new DeveloperProfile();
-halfirzzha.displayProfile();
-
+const me = new DeveloperProfile();
+console.log(me);
 ```
-
 <div align="center">
   <img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
 </div>
-
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/platane/platane/output/github-contribution-grid-snake-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/platane/platane/output/github-contribution-grid-snake.svg">
-    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/platane/platane/output/github-contribution-grid-snake.svg">
+    <img alt="snake animation" src="https://raw.githubusercontent.com/platane/platane/output/github-contribution-grid-snake.svg">
   </picture>
 </p>
-
 <div align="center">
   <img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
 </div>
+
+
+
+
